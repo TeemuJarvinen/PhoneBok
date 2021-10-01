@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhoneBok</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Sans:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="PhoneBok.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="headerFieldSection">
+          <h2>PhoneBok</h2>
+        </div>
+
+        <div class="answerFieldSection">
+          <span id="answerField">Name : Phone Number</span>
+        </div>
+
+        <div class="searchSection">
+          <div class="textInput">
+            <input id="searchInput" type="text" placeholder="Name" />
+          </div>
+          <div class="button" onclick="searchPhoneNumber()">
+            <span>Search</span>
+          </div>
+        </div>
+
+        <div class="addSection">
+          <div class="textContainer">
+            <div class="nameTextInput textInput">
+              <input id="nameInput" type="text" placeholder="Name" />
+            </div>
+            <div class="textInput">
+              <input id="phoneInput" type="number" placeholder="Phone number" />
+            </div>
+          </div>
+
+          <div class="buttonContainer">
+            <div class="button addButton" onclick="addPhoneNumber()">
+              <span>Add</span>
+            </div>
+            <div class="button" onclick="deleteUserInPhoneBook()">
+              <span>Delete</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tableSection">
+          <div class="tableContainer">
+            <table id="phoneTable" border="1" width="500px" height="200px">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Phone number</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="footerSection">
+          <span>This version won't take duplicate names</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
